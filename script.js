@@ -1,0 +1,1 @@
+var cidade = document.getElementById("lugar");
