@@ -1,3 +1,12 @@
+header{
+    text-align: center;
+}
+
+button{
+    border-radius: 5px;
+}
+
 .content {
     display:none;
 }
+
