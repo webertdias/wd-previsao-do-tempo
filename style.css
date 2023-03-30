@@ -1,17 +1,40 @@
-img{
-    width: 100%;
-    height: auto;
+body{
+    background-image: url(imagem/clima.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-color: rgb(116, 107, 190);
 }
 
 header{
     text-align: center;
 }
 
+.entrada{
+    margin-top: 250px;
+
+}
+
+input{
+    border-radius: 5px;
+    width: 150px;
+    height: 30px;
+}
+
 button{
     border-radius: 5px;
+    width: 120px;
+    height: 30px;
+
 }
 
 .content {
     display:none;
+}
+
+img{
+    width: 1500px;
+    height: 750px;
+    opacity: 0.8;
 }
 
