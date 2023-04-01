@@ -19,12 +19,14 @@ input{
     border-radius: 5px;
     width: 150px;
     height: 30px;
+    cursor: pointer;
 }
 
 button{
     border-radius: 5px;
     width: 120px;
     height: 30px;
+    cursor: pointer;
 
 }
 
