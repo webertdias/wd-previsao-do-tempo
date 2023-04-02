@@ -32,6 +32,8 @@ button{
 
 .content {
     display:none;
+    width: 60px;
+    height: 100px;
 }
 
 img{
