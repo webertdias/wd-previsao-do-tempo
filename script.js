@@ -1,7 +1,7 @@
 // variaveis e seleção de elementos DOM
-const apiKey = "ddf85b4f6c1ce572966991a36cc517a8";
+const apiKey = 'ddf85b4f6c1ce572966991a36cc517a8';
 
-const cityInput = document.querySelector("#place");
+const cityInput = document.querySelector("#city");
 const search = document.querySelector("#search");
 
 
@@ -12,12 +12,20 @@ const wind = document.querySelector("#wind");
 
 
 //funções
+const getWeatherData = async(city) => {
 
+    const apiWeatherURL = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric&lang=pt_br`;
+
+    const res = await fetch(apiWeatherURL);
+    const data = await res.json();
+
+    console.log(data);
+};
 
 const showWeatherData = (city) => {
 
-    console.log(city);
-}
+    getWeatherData(city);
+};
 
 
 //eventos
