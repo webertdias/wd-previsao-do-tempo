@@ -4,11 +4,11 @@ const apiKey = 'ddf85b4f6c1ce572966991a36cc517a8';
 const cityInput = document.querySelector("#city");
 const search = document.querySelector("#search");
 
-
+const names = document.querySelector("#name");
 const degree = document.querySelector("#degree");
-const country = document.querySelector("#country");
 const humidity = document.querySelector("#humidity");
 const wind = document.querySelector("#wind");
+const container = document.querySelector("#container")
 
 
 //funções
@@ -19,12 +19,19 @@ const getWeatherData = async(city) => {
     const res = await fetch(apiWeatherURL);
     const data = await res.json();
 
-    console.log(data);
+    return data;
 };
 
-const showWeatherData = (city) => {
+const showWeatherData = async (city) => {
 
-    getWeatherData(city);
+  const data = await getWeatherData(city);
+
+    names.innerHTML = data.name;
+    degree.innerHTML = parseInt(data.main.temp);
+    humidity.innerHTML = `${data.main.humidity}%`;
+    wind.innerHTML = `${data.wind.speed}KM/h`;
+    container.classList.remove("container");
+
 };
 
 
