@@ -1,7 +1,9 @@
 <h1>wd-previsao-do-tempo</h1>
 
+<img src="https://user-images.githubusercontent.com/100624694/230103863-2c0a730c-583c-4f63-b93d-cf4c897910a4.gif"/>
 
 <h2>Link de acesso:</h2>
+ https://webertdias.github.io/wd-previsao-do-tempo/
 
 <h2>Descrição do Projeto</h2>
 
