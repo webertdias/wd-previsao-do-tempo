@@ -8,7 +8,6 @@ const names = document.querySelector("#name");
 const degree = document.querySelector("#degree");
 const humidity = document.querySelector("#humidity");
 const wind = document.querySelector("#wind");
-const container = document.querySelector("#container")
 
 
 //funções
@@ -27,11 +26,9 @@ const showWeatherData = async (city) => {
   const data = await getWeatherData(city);
 
     names.innerHTML = data.name;
-    degree.innerHTML = parseInt(data.main.temp);
-    humidity.innerHTML = `${data.main.humidity}%`;
+    degree.innerHTML = `${parseInt(data.main.temp)}ºC`;
+    humidity.innerHTML = `${data.main.humidity}% Umidade`;
     wind.innerHTML = `${data.wind.speed}KM/h`;
-    container.classList.remove("container");
-
 };
 
 
